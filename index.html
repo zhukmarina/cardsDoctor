@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Cards</title>
+  </head>
+  <body>
+    <div class="modal-container">
+      <!-- <div id="logo"></div> -->
+      <img
+        src="./img/png-clipart-hospital-logo-clinic-health-care-physician-business.png"
+        alt=""
+        height="70px"
+        width="70px"
+      />
+      <button type="button" class="btn btn-primary" id="js-create">
+        Create visit
+      </button>
+      <button type="button" class="btn btn-secondary" id="js-login">
+        Sign in
+      </button>
+    </div>
+    <!-- Full screen modal -->
+
+    <div class="authorization-form">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+          <small id="emailHelp" class="form-text text-muted"
+            >We'll never share your email with anyone else.</small
+          >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Your password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Your password"
+          />
+        </div>
+        <p class="error-message">Incorrect email or password. Try again</p>
+        <button type="submit" class="btn btn-primary" id="confirm-auth">
+          Submit
+        </button>
+      </form>
+    </div>
+
+    
+<!-- фильтр -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <select class="form-select" aria-label="Default select example" id="filterUrg" name="doctors">
+        <option selected>Urgency visit</option>       
+        <option value="regular">regular</option>
+        <option value="priority">priority</option>
+        <option value="urgent">urgent</option>
+      </select>
+
+      <select class="form-select" aria-label="Default select example" id="filterStatus">
+        <option selected>Select doctor</option>       
+        <option value="cardiologist">cardiologist</option>
+        <option value="therapist">therapist</option>
+        <option value="dentist">dentist</option>
+        
+      </select>
+
+      
+
+      <form class="search-form" class="d-flex" action="" method="GET" style="width: 100%; display: flex;">
+  
+      <input class="form-control me-2" placeholder="введите имя пациента" type="search" name="site-search" id="site-search" class="site-search">
+
+      <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      
+    </div>
+  </div>
+</nav>
+
+    <form id="js-form" action="POST">
+      <div class="inputs-container"></div>
+    </form>
+
+    <div id="cards-container"></div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/filter.js"></script>
+    <script src="./js/search.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

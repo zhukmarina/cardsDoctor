@@ -1,0 +1,194 @@
+body {
+  background-color: rgb(236, 247, 250);
+}
+#modal {
+  height: 40px;
+  /* width: 50px; */
+  background-color: rgb(31, 14, 187);
+  color: rgb(196, 196, 196);
+}
+.authorization-form {
+  width: 500px;
+  margin: 0 auto;
+  display: none;
+}
+#confirm-auth {
+  margin-top: 10px;
+}
+#urgency {
+  margin-bottom: 16px;
+  height: 30px;
+}
+.modal-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+.modal-buttons button {
+  margin-left: 10px;
+}
+.modal-container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+  background-color: rgb(236, 247, 250);
+}
+.modal-window {
+  background-color: rgb(205, 242, 253);
+  width: 500px;
+  text-align: center;
+  /* height: 500px; */
+  margin: 0 auto;
+  border: 2px solid rgb(77, 77, 247);
+  border-radius: 20px;
+  /* display: none; */
+}
+
+#create-visit__button {
+  background-color: rgb(116, 241, 116);
+}
+#close-button {
+  background-color: rgb(250, 104, 104);
+}
+#close-button:hover {
+  background-color: rgb(238, 37, 37);
+  cursor: pointer;
+}
+#create-visit__button:hover {
+  background-color: rgb(30, 139, 30);
+  cursor: pointer;
+}
+.doctors {
+  display: none;
+}
+.active {
+  display: block;
+}
+#modal:hover,
+#modal:focus {
+  background-color: rgb(33, 47, 250);
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
+  z-index: 1;
+}
+#js-form {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+#js-create {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+.disactive {
+  display: none;
+}
+
+.card_discription {
+  border: 1px solid #a9d6ff;
+  border-bottom-left-radius: 11px;
+  border-bottom-right-radius: 11px;
+  width: 329px;
+  color: #737373;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.card_create_btn {
+  background-color: #23a6f0;
+  border-radius: 40px;
+  width: 150px;
+  height: 30px;
+  border: 1px;
+  color: #ffffff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card_create_btn:last-child {
+  background-color: red;
+}
+#cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* max-width: 1200px; */
+}
+#cards-container:empty {
+  content: "No items";
+}
+.show-more {
+  display: none;
+}
+#edit-card-btn {
+  display: none;
+}
+#js-form {
+  display: none;
+  margin: 0 auto;
+  max-width: 390px;
+  height: 500px;
+  border: 2px solid #0d6efd;
+  border-radius: 20px;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 15px 15px 10px 10px #0d6efd;
+}
+input {
+  border-radius: 15px;
+  height: 30px;
+  text-transform: uppercase;
+}
+#js-form select {
+  border-radius: 15px;
+  height: 30px;
+  text-transform: uppercase;
+}
+.error-message {
+  color: red;
+  background-color: rgb(250, 104, 104);
+  text-transform: uppercase;
+  font-size: 15px;
+  display: none;
+}
+
+
+.hide {
+	visibility: hidden;
+	position: absolute;
+}
+
+.show {
+	visibility: visible;
+}
