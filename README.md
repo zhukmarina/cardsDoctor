@@ -1,5 +1,7 @@
 # Step_Project_3_Cards
 
+https://zhukmarina.github.io/cardsDoctor/
+
 Authors:
 Zhukova Maryna
 Feshchenko Dmytro
